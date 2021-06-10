@@ -20,6 +20,7 @@ rename = wrap(os.rename)
 remove = wrap(os.remove)
 mkdir = wrap(os.mkdir)
 rmdir = wrap(os.rmdir)
+exists = wrap(os.path.exists)
 
 if hasattr(os, "sendfile"):
     sendfile = wrap(os.sendfile)
