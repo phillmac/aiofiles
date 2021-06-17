@@ -21,6 +21,8 @@ remove = wrap(os.remove)
 mkdir = wrap(os.mkdir)
 rmdir = wrap(os.rmdir)
 exists = wrap(os.path.exists)
+replace = wrap(os.replace)
+
 
 if hasattr(os, "sendfile"):
     sendfile = wrap(os.sendfile)
