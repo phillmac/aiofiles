@@ -21,6 +21,7 @@ remove = wrap(os.remove)
 mkdir = wrap(os.mkdir)
 rmdir = wrap(os.rmdir)
 exists = wrap(os.path.exists)
+abspath = wrap(os.path.abspath) 
 replace = wrap(os.replace)
 
 
