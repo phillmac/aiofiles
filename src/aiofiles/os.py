@@ -14,6 +14,8 @@ def wrap(func):
 
     return run
 
+async def _scandir(*args, **kwargs):
+    for item in os.scandir(*args, **kwargs): yield item
 
 stat = wrap(os.stat)
 rename = wrap(os.rename)
@@ -24,7 +26,7 @@ rmdir = wrap(os.rmdir)
 exists = wrap(os.path.exists)
 abspath = wrap(os.path.abspath) 
 replace = wrap(os.replace)
-
+scandir = wrap(_scandir)
 
 if hasattr(os, "sendfile"):
     sendfile = wrap(os.sendfile)
