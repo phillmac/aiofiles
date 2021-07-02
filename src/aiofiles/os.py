@@ -24,7 +24,7 @@ mkdir = wrap(os.mkdir)
 makedirs = wrap(os.makedirs)
 rmdir = wrap(os.rmdir)
 exists = wrap(os.path.exists)
-abspath = wrap(os.path.abspath) 
+abspath = wrap(os.path.abspath)
 replace = wrap(os.replace)
 scandir = wrap(_scandir)
 
